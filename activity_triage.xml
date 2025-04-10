@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI Medical Triage"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/symptomInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describe your symptoms here..."
+            android:padding="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:textSize="16sp"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/triageAnim"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:lottie_rawRes="@raw/heartbeat_anim"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/assessButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Urgency"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#388E3C"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your triage result will appear here."
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_card"/>
+
+    </LinearLayout>
+</ScrollView>
