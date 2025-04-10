@@ -1,0 +1,16 @@
+<resources>
+    <!-- App-wide theme (optional) -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#00A9FF</item>
+        <item name="colorPrimaryDark">#007ACC</item>
+        <item name="colorAccent">#FFFFFF</item>
+    </style>
+
+    <!-- Your custom rounded button style -->
+    <style name="RoundedButton">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>
