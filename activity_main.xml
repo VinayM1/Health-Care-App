@@ -1,0 +1,105 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F6F9">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🩺 First Aid AI Assistant"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#0C356A"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/inputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="💬 Ask your question here"
+            android:background="@drawable/bg_rounded_edit"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textMultiLine"
+            android:minLines="3" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/triageAnim"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            app:lottie_rawRes="@raw/triage_anim"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+        <Button
+            android:id="@+id/btnTriage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🩻 Triage Assessment"
+            style="@style/RoundedButton"
+            android:backgroundTint="#00A9FF" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🤖 Ask AI"
+            style="@style/RoundedButton"
+            android:backgroundTint="#2CD3E1" />
+
+        <TextView
+            android:id="@+id/responseText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="AI response will appear here"
+            android:background="@drawable/bg_rounded_response"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnCallAmbulance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚑 Call Ambulance (108)"
+            style="@style/RoundedButton"
+            android:backgroundTint="#FF6363" />
+
+        <Button
+            android:id="@+id/btnEmergencyCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📞 Emergency (112)"
+            style="@style/RoundedButton"
+            android:backgroundTint="#FF9B50" />
+
+        <Button
+            android:id="@+id/btnEmergencyContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📱 Call Emergency Contact"
+            style="@style/RoundedButton"
+            android:backgroundTint="#FFC470" />
+
+        <Button
+            android:id="@+id/btnMedicationReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💊 Medication Reminder"
+            style="@style/RoundedButton"
+            android:backgroundTint="#86A7FC"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>
